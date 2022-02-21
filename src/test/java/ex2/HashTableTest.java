@@ -27,6 +27,7 @@ class HashTableTest {
 
     }
 
+
     @Test
     void updates() {
         ht = new HashTable();
@@ -49,6 +50,7 @@ class HashTableTest {
         //      ht.count() =  8                                                                     - no s'han d'augmentar els items quan es fa un update -
         Assertions.assertEquals(16, ht.size());      // comprova que funciona el size
     }
+
 
     @Test
     void gets() {
