@@ -98,15 +98,15 @@ public class HashTable {
      */
     public void drop(String key) {
         int hash = getHash(key);
-        boolean noExisteix=false;
-        if(entries[hash] != null) {
 
+        if(entries[hash] != null) {
+            boolean noExisteix=false;
             HashEntry temp = entries[hash];
-            while( !temp.key.equals(key)){
-             if (temp.next==null){ //****               Afegit per comprovar si existeix l'element
-                 noExisteix=true;//****
-                 break;//****
-             }
+            while (!temp.key.equals(key)) {
+                if (temp.next == null) { //****               Afegit per comprovar si existeix l'element
+                    noExisteix = true;//****
+                    break;//****
+                }
                 temp = temp.next;
             }
 

@@ -95,6 +95,7 @@ public class HashTable {
      * Permet esborrar un element dins de la taula.
      * @param key La clau de l'element a trobar.
      */
+
     public void drop(String key) {
         int hash = getHash(key);
         if(entries[hash] != null) {
