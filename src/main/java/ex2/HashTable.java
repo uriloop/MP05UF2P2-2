@@ -41,7 +41,7 @@ public class HashTable {
             // Akí determinem si hem de fer un insert o un update i executem l'update      codi afegit = ***
             while(true){            //***
                 if(temp.key.equals(key)) {      //***
-                    update=true;           //***
+                    update=true; //***
                     temp.value=value;
                     break;       //***
                 }else if (temp.next==null) break;
