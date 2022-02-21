@@ -19,7 +19,7 @@ class HashTableTest {
         ht.put("22", "22");                        //    Inserir un element que col·lisiona dins una taula no vuida, que es col·locarà en 3a posició dins el mateix bucket.
         Assertions.assertEquals(ht.toString(), "\n bucket[0] = [0, 0] -> [11, 11] -> [22, 22]\n" +
                 " bucket[1] = [1, 1]");                     // comprova que funcionen els puts
-        Assertions.assertEquals(5, ht.count());     // comprova que funciona el count
+        Assertions.assertEquals(4, ht.count());     // comprova que funciona el count
         Assertions.assertEquals(16, ht.size());      // comprova que funciona el size
 
         // Resultat de la proba abans de fer els cambis:
